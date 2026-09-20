@@ -23,6 +23,8 @@ First public release. Unproven: the paired test has not run.
   single spawn: readings either side of one showed identical whole percentages.
 
 **Layout**
+- Repo root matches Assay: five files and two folders, plus `agents/` because the install
+  step copies from it. Working notes and run logs stay in the author's own working copy.
 - Matches the house layout used by Quorum and Assay: `references/` for supporting material,
   `docs/` for run records and testing, and README sections in the same order.
   `panel-briefs.md` moved to `references/panel-briefs.md`.
