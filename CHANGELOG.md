@@ -22,6 +22,11 @@ First public release. Unproven: the paired test has not run.
 - Cost guidance now uses the subagent's own reported token count. `get_usage` cannot see a
   single spawn: readings either side of one showed identical whole percentages.
 
+**Layout**
+- Matches the house layout used by Quorum and Assay: `references/` for supporting material,
+  `docs/` for run records and testing, and README sections in the same order.
+  `panel-briefs.md` moved to `references/panel-briefs.md`.
+
 **Known limits**
 - Test 8, the paired outcome test, has not run.
 - The skill cannot offer itself. See `docs/optional-offer.md`.

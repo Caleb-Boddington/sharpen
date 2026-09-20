@@ -31,7 +31,7 @@ Everything Sharpen uses or makes stays in this folder, so the skill is one porta
 | | |
 |---|---|
 | `SKILL.md` | This file. |
-| `panel-briefs.md` | Every seat's brief and one example reply. Passed to helpers word for word. |
+| `references/panel-briefs.md` | Every seat's brief and one example reply. Passed to helpers word for word. |
 | `agents/sharpen-panelist.md` | The helper type: web search and web fetch only, no local file tools. **Must be copied or linked into `~/.claude/agents/`, or every seat silently falls back to a helper that can read your files.** See the README. |
 | `prompts/` | Every raw prompt and finished prompt, dated. |
 | `runs.md` | One line per run, for the retirement check. |
@@ -106,7 +106,7 @@ Spawn every seat in a single message, `subagent_type: "sharpen-panelist"`,
 for this run.
 
 Seats: **intent reader, gap finder, domain expert (one or two), devil's advocate.** Never
-fewer, whatever the task size. Each gets its brief from `panel-briefs.md` word for word,
+fewer, whatever the task size. Each gets its brief from `references/panel-briefs.md` word for word,
 plus only the inputs listed under it there.
 
 **Failure path.** A reply in the wrong format: re-ask once with SendMessage. An empty reply
@@ -185,7 +185,7 @@ Dates as DD/MM/YYYY, British English, no em or en dashes.
 ### 7. Panel two (parallel, one message)
 
 **Fresh intent checker** (raw prompt, their answers with IDs, the draft; nothing from panel
-one) and **prompt engineer** (the draft only). Briefs in `panel-briefs.md`.
+one) and **prompt engineer** (the draft only). Briefs in `references/panel-briefs.md`.
 
 Fix what they find. If a fix needs the user, ask that point only. **One recheck loop**, by the
 seats that raised points, at most 2 agents. Then stop, and list anything still open at

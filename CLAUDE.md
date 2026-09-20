@@ -5,7 +5,7 @@ github.com/Caleb-Boddington/sharpen.
 
 ## Never hand-edit these
 
-`SKILL.md`, `panel-briefs.md` and `agents/sharpen-panelist.md` are **generated**. The
+`SKILL.md`, `references/panel-briefs.md` and `agents/sharpen-panelist.md` are **generated**. The
 canonical copies live at `skills/personal/sharpen/` in the hub, because `~/.claude/skills/`
 symlinks there and Google Drive does not sync symlinks (hub rule 6).
 
@@ -34,12 +34,12 @@ this folder and have no copy anywhere else.
 The skill names nobody. It reads as second person, and any pronoun for the user is they or
 them. If a change reintroduces a name, a hub path or a machine-specific path, it is a bug.
 
-Four files must never name anyone: `SKILL.md`, `panel-briefs.md`, `README.md` and anything
+Four files must never name anyone: `SKILL.md`, `references/panel-briefs.md`, `README.md` and anything
 under `agents/` or `docs/`. `LICENSE.md` carries the copyright line and `MEMORY.md` is an
 author's note, so both are exempt. Check before every push:
 
 ```bash
-cd ~/ClaudeHub/projects/sharpen && grep -rniE "caleb|claudehub|/users/|G:\\\\" SKILL.md panel-briefs.md README.md agents docs | grep -v Caleb-Boddington; echo "exit: clean if nothing above"
+cd ~/ClaudeHub/projects/sharpen && grep -rniE "caleb|claudehub|/users/|G:\\\\" SKILL.md references README.md agents docs | grep -v Caleb-Boddington; echo "exit: clean if nothing above"
 ```
 
 The `cd` is not optional. Run it from the wrong folder and grep prints "No such file or
