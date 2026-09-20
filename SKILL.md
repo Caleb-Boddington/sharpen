@@ -33,8 +33,8 @@ Everything Sharpen uses or makes stays in this folder, so the skill is one porta
 | `SKILL.md` | This file. |
 | `references/panel-briefs.md` | Every seat's brief and one example reply. Passed to helpers word for word. |
 | `agents/sharpen-panelist.md` | The helper type: web search and web fetch only, no local file tools. **Must be copied or linked into `~/.claude/agents/`, or every seat silently falls back to a helper that can read your files.** See the README. |
-| `prompts/` | Every raw prompt and finished prompt, dated. |
-| `runs.md` | One line per run, for the retirement check. |
+| `prompts/` | Every raw prompt and finished prompt, dated. **Create it if it is missing**; a fresh clone does not ship it. |
+| `runs.md` | One line per run, for the retirement check. **Create it with a header row if it is missing**; a fresh clone does not ship it. |
 
 ## Limits, stated honestly
 
