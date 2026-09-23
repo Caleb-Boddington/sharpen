@@ -2,12 +2,12 @@
 
 A prompt-steering skill for Claude Code. It turns a rough idea into a prompt you have approved, line by line, before any work starts.
 
-![version](https://img.shields.io/badge/version-0.1.0-blueviolet)
+![version](https://img.shields.io/badge/version-0.1.1-blueviolet)
 ![licence](https://img.shields.io/badge/licence-MIT-blue)
 ![agents](https://img.shields.io/badge/agents-6%E2%80%9311%20per%20run-orange)
-![status](https://img.shields.io/badge/status-unproven-red)
+![status](https://img.shields.io/badge/status-experimental-yellow)
 
-Read the badge. Nobody has shown this beats simply asking Claude to interview you, and the test that would settle it has not been run. I'd rather say that at the top than bury it.
+I use it on my own work. What hasn't been done yet is a side-by-side: the same prompt run through a plain session and through Sharpen, and the finished work compared. Until that runs, treat it as experimental, which is where Quorum and Assay sit too.
 
 ## What it does
 
@@ -97,7 +97,7 @@ The cap is 11 spawns including retries. Going past it needs your explicit yes, a
 ## Known limitations
 
 - **Every checker is Claude.** The second panel is a fresh reading, not a second opinion from a different model. The skill says so at sign-off and I'd rather it kept saying so.
-- **It's unproven.** The paired test, running one real prompt through a plain session and through Sharpen and comparing the finished work, hasn't run. Until it does there's no evidence the agents buy anything a good interview wouldn't.
+- **No side-by-side yet.** The paired test, running one real prompt through a plain session and through Sharpen and comparing the finished work, hasn't run. Until it does there's no evidence the agents buy anything a good interview wouldn't.
 - **It won't offer itself.** A skill only loads once something has decided to load it, and nothing decides that for a cold idea. If you want Claude to suggest Sharpen when you describe a rough plan, that line has to go in your own `CLAUDE.md`. There's a copy-paste version in [docs/optional-offer.md](docs/optional-offer.md).
 - **The Crucible offer has no fixed wording.** The gate offer is pinned to an exact sentence; this one isn't, so two sessions will phrase it differently. Found by a cold read on 20/09/2026, recorded in [docs/testing.md](docs/testing.md).
 - **An abandoned run leaves an orphan.** Your prompt is saved at step 1, before the Crucible check can end the run. Nothing cleans that up.

@@ -2,6 +2,18 @@
 
 Dates are DD/MM/YYYY.
 
+## 0.1.1, 23/09/2026
+
+Documentation only. The skill itself is unchanged.
+
+**Changed**
+- Status badge from red "unproven" to yellow "experimental", matching Quorum and Assay. The three
+  repos disagreed about how to label a working but untested tool, and Sharpen was the odd one out.
+- The opening lines now say it is in use on real work and that the side-by-side test has still
+  not run. The old wording read as if it had never been used at all, which was no longer true.
+- The Known limitations entry keeps the substance, renamed "No side-by-side yet". The paired
+  test is still the thing that would settle it, and it is still owed.
+
 ## 0.1.0, 20/09/2026
 
 First public release. Unproven: the paired test has not run.
